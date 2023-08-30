@@ -82,7 +82,8 @@
 .filter-select__item:not(:last-child) {
   margin-bottom: 0.8rem;
 }
-@media screen and (max-width: 375px) {
+/* RESPONSIVE */
+@media screen and (max-width: 400px) {
   .filter-container {
     display: flex;
     flex-direction: column;

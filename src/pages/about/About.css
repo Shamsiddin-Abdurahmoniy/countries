@@ -94,7 +94,8 @@
 .border-country:nth-child(2) {
   margin-left: 1.6rem;
 }
-@media screen and (max-width: 375px) {
+/* RESPONSIVE */
+@media screen and (max-width: 400px) {
   .about__container {
     padding-top: 4rem;
   }

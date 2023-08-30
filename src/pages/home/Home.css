@@ -49,7 +49,8 @@
 .card-content p:not(:last-child) {
   margin-bottom: 0.8rem;
 }
-@media screen and (max-width: 375px) {
+/* RESPONSIVE */
+@media screen and (max-width: 400px) {
   .home__container {
     grid-template-columns: repeat(1, 264px);
     row-gap: 4rem;

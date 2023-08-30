@@ -82,8 +82,9 @@ main {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 375px) {
+/* RESPONSIVE */
+@media screen and (max-width: 400px) {
   .container {
-    max-width: 415px;
+    max-width: 440px;
   }
 }
