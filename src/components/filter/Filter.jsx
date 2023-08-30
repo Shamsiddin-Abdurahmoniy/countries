@@ -14,7 +14,7 @@ function Filter({ setSearch, mode }) {
   }
   return (
     <section className="filter">
-      <div className="container filter-container">
+      <div className="container filter__container">
         <form className="filter__form">
           <MdSearch className="search-icon" />
           <input

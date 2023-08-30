@@ -50,10 +50,17 @@
   margin-bottom: 0.8rem;
 }
 /* RESPONSIVE */
+@media screen and (max-width: 1000px) {
+  .home__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 400px) {
   .home__container {
-    grid-template-columns: repeat(1, 264px);
-    row-gap: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .card {
     padding-bottom: 3rem;

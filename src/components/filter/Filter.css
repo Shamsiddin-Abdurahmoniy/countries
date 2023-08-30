@@ -1,10 +1,11 @@
 .filter {
   background-color: var(--bg-color);
 }
-.filter-container {
+.filter__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 4.8rem 0rem;
 }
 .filter__form {
@@ -84,12 +85,12 @@
 }
 /* RESPONSIVE */
 @media screen and (max-width: 400px) {
-  .filter-container {
+  .filter__container {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    padding: 2.4rem 0rem;
+    padding: 2.4rem 2rem;
   }
   .filter__form {
     padding: 1.4rem 3.2rem;
