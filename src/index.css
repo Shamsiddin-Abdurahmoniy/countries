@@ -1,0 +1,89 @@
+/* GLOBAL STYLES */
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;800;900&display=swap);
+
+:root {
+  --bg-color: #f5f5f5;
+  --header-card-bg-color: #ffffff;
+  --text-color: #111517;
+}
+.dark-mode {
+  --bg-color: #202c36;
+  --header-card-bg-color: #2b3844;
+  --text-color: #fff;
+}
+.light-mode {
+  --bg-color: #f5f5f5;
+  --header-card-bg-color: #ffffff;
+  --text-color: #111517;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--bg-color);
+}
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  object-fit: cover;
+  display: flex;
+}
+main {
+  flex-grow: 1;
+}
+/* for loading */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 415px;
+  }
+}

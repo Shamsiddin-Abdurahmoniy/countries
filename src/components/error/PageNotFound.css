@@ -1,0 +1,31 @@
+.error {
+  background-color: var(--bg-color);
+  height: 100%;
+}
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.error-text {
+  padding-bottom: 30px;
+  font-size: 100px;
+  color: var(--text-color);
+}
+.error-content {
+  font-size: x-large;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.link {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-color);
+  text-decoration: underline;
+  font-weight: 700;
+  color: rgb(113, 99, 18);
+}

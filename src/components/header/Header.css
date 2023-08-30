@@ -1,0 +1,60 @@
+.header {
+  background-color: var(--header-card-bg-color);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+}
+.header__container {
+  padding: 2.4rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-logo {
+  color: var(--text-color);
+  font-family: "Nunito Sans";
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: normal;
+}
+.mode-toggle {
+  border: 0rem;
+  background-color: var(--header-card-bg-color);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.mode-toggle__text {
+  color: var(--text-color);
+  font-family: "Nunito Sans";
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: normal;
+}
+.mode-toggle__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.4rem;
+}
+.mode-toggle__dark-icon {
+  color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.4rem;
+}
+@media screen and (max-width: 375px) {
+  .header__container {
+    padding: 3rem 0;
+  }
+  .site-logo {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    line-height: 2rem;
+  }
+  .mode-toggle__text {
+    font-size: 1.2rem;
+  }
+  .mode-toggle__icon,
+  .mode-toggle__dark-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}

@@ -1,0 +1,111 @@
+.filter {
+  background-color: var(--bg-color);
+}
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.8rem 0rem;
+}
+.filter__form {
+  display: flex;
+  align-items: center;
+  padding: 1.9rem 3.2rem;
+  width: 100%;
+  max-width: 48rem;
+  border-radius: 0.5rem;
+  background-color: var(--header-card-bg-color);
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+}
+.search-icon {
+  color: #848484;
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-right: 2.4rem;
+}
+.filter__form input {
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.4rem;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  color: var(--text-color);
+}
+.filter__form input::placeholder {
+  font-size: 1.4rem;
+}
+.filter-select {
+  position: relative;
+  border-radius: 0.5rem;
+  background-color: var(--header-card-bg-color);
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+  border: 0rem;
+  outline: none;
+  padding: 1.8rem 2.4rem;
+  font-size: 16px;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.filter-select div {
+  display: flex;
+  align-items: center;
+}
+.filter-select__title {
+  margin-right: 6.2rem;
+  color: var(--text-color);
+}
+.filter-select__list {
+  visibility: hidden;
+  padding: 1.8rem 2.4rem;
+  position: absolute;
+  top: 57px;
+  left: 0;
+  border-radius: 0.5rem;
+  background: var(--header-card-bg-color);
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+  width: 24rem;
+}
+.filter-select:hover > .filter-select__list {
+  visibility: visible;
+}
+.filter-select__item {
+  color: var(--text-color);
+  font-family: "Nunito Sans";
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.filter-select__item:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+@media screen and (max-width: 375px) {
+  .filter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 2.4rem 0rem;
+  }
+  .filter__form {
+    padding: 1.4rem 3.2rem;
+    width: 100%;
+    max-width: 34.3rem;
+    margin-bottom: 4rem;
+  }
+  .search-icon {
+    width: 2.6rem;
+    height: 2.6rem;
+    margin-right: 2.6rem;
+  }
+  .filter__form input {
+    font-size: 1.2rem;
+  }
+  .filter__form input::placeholder {
+    font-size: 1.2rem;
+    opacity: 0.7;
+  }
+}
