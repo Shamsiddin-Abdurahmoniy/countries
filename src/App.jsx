@@ -20,7 +20,7 @@ import useFetch from "./hooks/useFetch";
 // components
 import PageNotFound from "./components/error/PageNotFound";
 function App() {
-  const { isPending } = useFetch(false);
+  const { isPending, error } = useFetch(false);
   const [mode, setMode] = useState(false);
   const routes = createBrowserRouter(
     createRoutesFromElements(
@@ -38,6 +38,7 @@ function App() {
           <DotPulse size={80} speed={1.3} color="white" />
         </div>
       )}
+      {error && <PageNotFound />}
       <RouterProvider router={routes} />
     </div>
   );
